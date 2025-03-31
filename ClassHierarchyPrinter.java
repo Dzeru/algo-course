@@ -6,6 +6,45 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ClassHierarchyPrinter {
+
+    /*
+    Вы разрабатываете систему отображения иерархии классов и вложенных структур в программном коде. 
+    Каждый класс может содержать вложенные подклассы, которые нужно вывести в удобном формате, сохраняя иерархию. 
+    Подклассы должны быть отсортированы в алфавитном порядке, 
+    а вложенные элементы должны иметь отступ на два пробела больше, чем их родительский класс.
+
+    Формат входных данных
+    Число n — количество строк (1 ≤ n ≤ 100000), 
+    где каждая строка представляет путь к классу в формате package/subpackage/ClassName. 
+    Первый пакет во всех путях одинаковый и имеет непустое имя. 
+    Имена пакетов и классов — строчные латинские буквы ≤ 10 символов.
+    
+    Формат выходных данных
+    Выведите структуру классов, соблюдая иерархию. 
+    Все классы внутри одного пакета должны быть отсортированы по алфавиту 
+    и иметь отступ на два пробела больше, чем родительский пакет.
+    
+    Пример входных данных
+    5
+    com/example/utils/StringUtils
+    com/example/utils/MathUtils
+    com/example/core/App
+    com/example/core/Config
+    com/example/core/utils/FileUtils
+
+    Пример выходных данных
+    com
+      example
+        core
+          App
+          Config
+          utils
+            FileUtils
+        utils
+          MathUtils
+          StringUtils
+     */
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
