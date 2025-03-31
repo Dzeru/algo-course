@@ -6,3 +6,5 @@
 - LevenshteinDistance - расстояние Левенштейна (динамическое программирование)
 - SlidingWindow - скользящее окно
 - TwoSum - поиск заданной суммы в массиве
+- ClassHierarchyPrinter - вывод иерархии классов
+- Berries - барсук и ягоды
